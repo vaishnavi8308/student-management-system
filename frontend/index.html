@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Management System</h1>
+
+    <!-- Four Options -->
+    <div class="menu">
+        <button onclick="show('add')">Add Student</button>
+        <button onclick="show('view')">View Student</button>
+        <button onclick="show('update')">Update</button>
+        <button onclick="show('delete')">Delete</button>
+    </div>
+
+
+    <!-- Add Student -->
+    <div id="add" class="box">
+
+        <h2>Add Student</h2>
+
+        <input id="name" placeholder="Student Name">
+        <input id="course" placeholder="Course">
+        <input id="marks" type="number" placeholder="Marks">
+
+        <button onclick="addStudent()">Add Student</button>
+
+    </div>
+
+
+    <!-- View Students -->
+    <div id="view" class="box">
+
+        <h2>Students</h2>
+
+        <button onclick="getStudents()">Load Students</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList"></tbody>
+        </table>
+
+    </div>
+
+
+    <!-- Update -->
+    <div id="update" class="box">
+
+        <h2>Update Student Marks</h2>
+
+        <input id="updateId" type="number" placeholder="Student ID">
+        <input id="updateMarks" type="number" placeholder="New Marks">
+
+        <button onclick="updateStudent()">Update</button>
+
+    </div>
+
+
+    <!-- Delete -->
+    <div id="delete" class="box">
+
+        <h2>Delete Student</h2>
+
+        <input id="deleteId" type="number" placeholder="Student ID">
+
+        <button onclick="deleteStudent()">Delete</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

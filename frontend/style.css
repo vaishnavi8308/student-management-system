@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #0d4394;
+    margin-bottom: 30px;
+}
+
+
+/* Four buttons */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.menu button {
+    background: #0d4394;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.menu button:hover {
+    background: #0d4394;
+}
+
+
+/* Content box */
+
+.box {
+    display: none;
+
+    background: white;
+
+    width: 500px;
+    max-width: 95%;
+
+    margin: auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px #ddd;
+}
+
+.box h2 {
+    color: #0d4394;
+}
+
+
+/* Inputs */
+
+input {
+    width: 90%;
+
+    padding: 12px;
+
+    margin: 8px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+
+/* Action buttons */
+
+.box button {
+    background:#0d4394;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    margin: 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.box button:hover {
+    background: #0d4394;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+
+    margin-top: 20px;
+
+    border-collapse: collapse;
+}
+
+th {
+    background: black;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+td {
+    background: #fafafa;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu button {
+        width: 100%;
+    }
+}
