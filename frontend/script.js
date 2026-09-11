@@ -1,7 +1,7 @@
 // FastAPI address
-const API = "http://127.0.0.1:8000";
+const API = "https://student-management-system-1-smq2.onrender.com/";
 
-
+console.log("script is running")
 // Show selected section
 function show(id) {
 
