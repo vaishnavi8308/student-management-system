@@ -1,5 +1,5 @@
 // FastAPI address
-const API = "https://student-management-system-1-smq2.onrender.com/";
+const API = "https://student-management-system-1-smq2.onrender.com";
 
 console.log("script is running")
 // Show selected section
